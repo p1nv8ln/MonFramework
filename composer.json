@@ -1,0 +1,10 @@
+{
+    "name": "pop/mon-framework",
+    "authors": [
+        {
+            "name": "TheFrenchCoder",
+            "email": "raphaelouvigny@gmail.com"
+        }
+    ],
+    "require": {}
+}
