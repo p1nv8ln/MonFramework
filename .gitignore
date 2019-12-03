@@ -1,5 +1,59 @@
-.vscode
-/vendor/
-composer.lock
+### Personal ###
 minuterie.txt
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+composer.lock
+
+# Covers PHPUnit
+# Reference: https://phpunit.de/
+
+# Generated files
 .phpunit.result.cache
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### PHPCodeSniffer ###
+# CodeSniffer
+
+/vendor/*
+/wpcs/*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/git,composer,phpcodesniffer,visualstudiocode
+# FORGET PHPUNIT exist in https://github.com/toptal/gitignore/blob/master/templates/PHPUnit.gitignore
+# but not on https://www.gitignore.io/
