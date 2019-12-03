@@ -21,7 +21,6 @@ class AppTest extends TestCase{
         $request = new ServerRequest('GET', '/blog');
         $response = $app->run($request);
         $this->assertStringContainsStringIgnoringCase('<h1> Bienvenue sur le Blog </h1>', (string) $response->getBody());
-        //$this->assertContains('<h1> Bienvenue sur le Blog </h1>', (string) $response->getBody());
         $this->assertEquals(200, $response->getStatusCode());
     }
     

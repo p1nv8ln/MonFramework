@@ -18,10 +18,14 @@ class App
         }
 
         if ($uri === '/blog') {
-            return new Response(200, [], '<h1> Bienvenue sur le Blog </h1>');
+            return (new Response())
+            ->withStatus(200)
+            ->getBody()->write('<h1> Bienvenue sur le blog </h1>');
         }
 
         //If any page is triggered, return 404
-        return new Response(404, [], '<h1> Erreur 404 </h1>');
+        return (new Response())
+        ->withStatus(404)
+        ->getBody()->write('h1> Erreur 404 </h1>');
     }
 }
