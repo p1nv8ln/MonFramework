@@ -1,10 +1,22 @@
 {
-    "name": "pop/mon-framework",
+    "name": "thefrenchcoder/mon-framework",
     "authors": [
         {
             "name": "TheFrenchCoder",
             "email": "raphaelouvigny@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4":{
+            "Framework\\": "src/Framework" 
+        }
+    },
+    "require": {
+        "guzzlehttp/psr7": "^1.6",
+        "http-interop/response-sender": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "squizlabs/php_codesniffer": "^3.5"
+    }
 }
