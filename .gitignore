@@ -2,3 +2,4 @@
 /vendor/
 composer.lock
 minuterie.txt
+.phpunit.result.cache

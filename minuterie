@@ -1,3 +1,5 @@
 php -S localhost:8080 -t public\
 
+.\vendor\bin\phpcs.bat &&  .\vendor\bin\phpunit.bat
+
 ep 2 31:00
